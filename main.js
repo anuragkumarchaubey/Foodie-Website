@@ -96,7 +96,7 @@ const addTocart = (product) => {
   cartproduct.push(product);
 
   let quantity = 1;
-  let price = parseFloat(product.price.replace('$',''))
+  let price = parseFloat(product.price.replace('₹',''))
 
   const cartItem = document.createElement('div');
   cartItem.classList.add('item');
@@ -170,3 +170,4 @@ const initApp = () => {
 
 
 initApp()
+
