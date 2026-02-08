@@ -21,7 +21,7 @@
     {
         "id":4,
         "name":"Chicken Roll",
-        "price":"$7.50",
+        "price":"₹7.50",
         "image":"Images/chicken-roll.png"
 
     },
@@ -35,7 +35,7 @@
     {
         "id":6,
         "name":"Chicken Lasagna",
-        "price":"$16.45",
+        "price":"₹16.45",
         "image":"Images/lasagna.png"
 
     },
@@ -57,6 +57,7 @@
     
 
 ]
+
 
 
 
