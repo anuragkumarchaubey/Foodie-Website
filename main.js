@@ -46,13 +46,13 @@ const updateTotals = ()=>{
 
   document.querySelectorAll('.item').forEach(item =>{
     const quantity = parseInt(item.querySelector('.quantity-value').textContent)
-    const price = parseFloat(item.querySelector('.item-total').textContent.replace('$',''));
+    const price = parseFloat(item.querySelector('.item-total').textContent.replace('₹',''));
     totalPrice += price;
     totalQuantity += quantity;
 
   })
 
-  cartTotal.textContent = `$${totalPrice.toFixed(2)}`;
+  cartTotal.textContent = `₹${totalPrice.toFixed(2)}`;
   cartValue.textContent = totalQuantity;
 }
 
@@ -132,7 +132,7 @@ const addTocart = (product) => {
       event.preventDefault();
       quantity++;
       quantityValue.textContent  = quantity;
-      itemTotal.textContent = `$${(price * quantity).toFixed(2)}`;
+      itemTotal.textContent = `₹${(price * quantity).toFixed(2)}`;
       updateTotals();
     });
 
@@ -141,7 +141,7 @@ const addTocart = (product) => {
       if(quantity> 1){
           quantity--;
           quantityValue.textContent = quantity;
-          itemTotal.textContent = `$${(price * quantity).toFixed(2)}`;
+          itemTotal.textContent = `₹${(price * quantity).toFixed(2)}`;
         updateTotals();
 
       }else{
@@ -167,5 +167,6 @@ const initApp = () => {
       showCards()
     })
 }
+
 
 initApp()
