@@ -3,7 +3,7 @@
         "id":1,
         "name": "Dooble Beef Burger",
         "price": "$200",
-        "image": "Images/burger.png"
+        "image": "images/burger.png"
     },
     {
         "id":2,
@@ -57,5 +57,6 @@
     
 
 ]
+
 
 
