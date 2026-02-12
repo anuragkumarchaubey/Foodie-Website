@@ -91,6 +91,7 @@ img{
 
 .navbar{
     min-height: 14vh;
+    position: fixed;
 }
 
 .logo{
